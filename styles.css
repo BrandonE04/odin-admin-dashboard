@@ -12,15 +12,19 @@ h1{
 }
 h2{
     font-size: 1.25em;
-    background-color: #F2F2F2;
+    padding-top: 15px;
 }
 h4{
+    font-size: 1em;
     margin-bottom: 0px;
 }
 p{
     font-size: .75em;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 5px 5px 0px;
     color: gray;
+}
+li{
+    font-size: 1.5em;
 }
 .header{
     display: grid;
@@ -29,7 +33,31 @@ p{
     background-color: white;
     box-shadow: 0 5px 2px -2px lightgrey;
     position:relative;
+    padding: 10px;
     
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    justify-self: center;
+}
+button{
+    background-color: #0fb0f5;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    width: 25%;
+    height: 50%;
+    text-align: center;
+}
+input.search{
+    width: 90%;
+    color: #F2F2F2;
+    border-radius: 10px;
+    border: none;
+    background-color: #F2F2F2;
+    padding: 5px 0px;
 }
 .sidebar{
     grid-row: 1 / 4;
@@ -44,13 +72,14 @@ p{
 }
 .main{
     grid-row: 2 / 4;
-    padding: 10px;
+    padding: 0px 10px 0px 10px;
 }
 .projects{
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
     gap: 20px;
     height: 90%;
+    margin-top: 10px;
 }
 .project, .announcementsContainer, .trendingContainer{
     background-color: white;
@@ -63,6 +92,10 @@ p{
 }
 .announcements{
     grid-row: 2 / 3;
+}
+.borderBottom{ 
+    padding-bottom: 5px; 
+    border-bottom: lightgray solid 2px;
 }
 .trending{
     grid-row: 3 / 4;
