@@ -1,0 +1,69 @@
+*{
+    font-family: Roboto;
+    margin: 0px;
+}
+.container{
+    display: grid;
+    grid-template: 20vh 50vh 50vh / .5fr 1fr .5fr;
+    background-color: #F2F2F2;
+}
+h1{
+    font-size: 1.5em;
+}
+h2{
+    font-size: 1.25em;
+    background-color: #F2F2F2;
+}
+h4{
+    margin-bottom: 0px;
+}
+p{
+    font-size: .75em;
+    margin: 5px 0px 5px 0px;
+    color: gray;
+}
+.header{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-area: 1 / 2 / 2 / 4;
+    background-color: white;
+    box-shadow: 0 5px 2px -2px lightgrey;
+    position:relative;
+    
+}
+.sidebar{
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    background-color: #0fb0f5;
+    color: white;
+}
+.navigation{
+    display: grid;
+    grid-template: repeat(11, 1fr) / 1fr;
+    list-style-type: none;
+}
+.main{
+    grid-row: 2 / 4;
+    padding: 10px;
+}
+.projects{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 20px;
+    height: 90%;
+}
+.project, .announcementsContainer, .trendingContainer{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px -2px lightgrey;
+    padding: 10px;
+}
+.announcementsContainer, .trendingContainer{
+    margin-top: 10px;
+}
+.announcements{
+    grid-row: 2 / 3;
+}
+.trending{
+    grid-row: 3 / 4;
+}
