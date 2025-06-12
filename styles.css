@@ -9,10 +9,17 @@
 }
 h1{
     font-size: 1.5em;
+    margin: 1em 1em 1em .25em;
+}
+.greetingHeader{
+    margin: 0px;
 }
 h2{
     font-size: 1.25em;
     padding-top: 15px;
+}
+h3{
+    align-self: center;
 }
 h4{
     font-size: 1em;
@@ -24,7 +31,9 @@ p{
     color: gray;
 }
 li{
+    margin-top: .5em;
     font-size: 1.5em;
+    display: flex;
 }
 .header{
     display: grid;
@@ -35,6 +44,15 @@ li{
     position:relative;
     padding: 10px;
     
+}
+.searchIcon{
+    width:5%;
+}
+.account{
+    display: flex;
+}
+.notification{
+    width: 5%;
 }
 .buttons{
     display: flex;
@@ -48,11 +66,16 @@ button{
     color: white;
     border: none;
     width: 25%;
-    height: 50%;
+    height: 60%;
     text-align: center;
+}
+.searchContainer{
+    display: flex;
 }
 input.search{
     width: 90%;
+    height: 60%;
+    align-self: center;
     color: #F2F2F2;
     border-radius: 10px;
     border: none;
@@ -70,6 +93,19 @@ input.search{
     grid-template: repeat(11, 1fr) / 1fr;
     list-style-type: none;
 }
+.headerHolder{
+    display: flex;
+}
+.dashboard{
+    filter: invert(100%);
+    width: 10%;
+    margin: 1em 0em 1em 1em;
+}
+.navImage{
+    width: 9%;
+    filter: invert(100%);
+    margin-right: .5em;
+}
 .main{
     grid-row: 2 / 4;
     padding: 0px 10px 0px 10px;
@@ -86,6 +122,15 @@ input.search{
     border-radius: 10px;
     box-shadow: 5px 5px 2px -2px lightgrey;
     padding: 10px;
+}
+.shareImage{
+    width: 10%;
+    margin-left: 10px;
+}
+.share{
+    height: 60%;
+    justify-content: end;
+    display: flex;
 }
 .announcementsContainer, .trendingContainer{
     margin-top: 10px;
