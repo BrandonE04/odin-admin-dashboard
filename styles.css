@@ -7,12 +7,18 @@
     grid-template: 20vh 50vh 50vh / .5fr 1fr .5fr;
     background-color: #F2F2F2;
 }
+strong{
+    font-size: .75em;
+}
 h1{
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin: 1em 1em 1em .25em;
 }
 .greetingHeader{
     margin: 0px;
+}
+.greeting{
+    display: flex;
 }
 h2{
     font-size: 1.25em;
@@ -35,6 +41,10 @@ li{
     font-size: 1.5em;
     display: flex;
 }
+.smallProfile{
+    width: 40px;
+    margin: 0px 15px;
+}
 .header{
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
@@ -45,11 +55,15 @@ li{
     padding: 10px;
     
 }
+.bigProfile{
+    width: 12%;
+}
 .searchIcon{
     width:5%;
 }
 .account{
     display: flex;
+    justify-content: center;
 }
 .notification{
     width: 5%;
@@ -59,6 +73,7 @@ li{
     justify-content: space-around;
     width: 70%;
     justify-self: center;
+    align-items: center;
 }
 button{
     background-color: #0fb0f5;
@@ -88,9 +103,13 @@ input.search{
     background-color: #0fb0f5;
     color: white;
 }
+.settingsButton{
+    display:flex;
+    align-items: end;
+}
 .navigation{
     display: grid;
-    grid-template: repeat(11, 1fr) / 1fr;
+    grid-template: repeat(6, 1fr) 2fr repeat(3, 1fr) / 1fr;
     list-style-type: none;
 }
 .headerHolder{
@@ -123,6 +142,11 @@ input.search{
     box-shadow: 5px 5px 2px -2px lightgrey;
     padding: 10px;
 }
+.project{
+    box-shadow: 5px 5px 2px -2px lightgrey,
+    inset 6px 0px yellow;
+    padding-left: 20px;
+}
 .shareImage{
     width: 10%;
     margin-left: 10px;
@@ -134,9 +158,13 @@ input.search{
 }
 .announcementsContainer, .trendingContainer{
     margin-top: 10px;
+    padding: 20px;
 }
 .announcements{
     grid-row: 2 / 3;
+}
+.trendingInfoContainer{
+    display: flex;
 }
 .borderBottom{ 
     padding-bottom: 5px; 
