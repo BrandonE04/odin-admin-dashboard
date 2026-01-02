@@ -6,6 +6,7 @@
     display: grid;
     grid-template: 20vh 50vh 50vh / .5fr 1fr .5fr;
     background-color: #F2F2F2;
+    overflow: hidden;
 }
 strong{
     font-size: .75em;
